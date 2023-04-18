@@ -1724,7 +1724,9 @@ input, select, textarea {
 		input[type="reset"].alt,
 		button.alt,
 		.button.alt {
-			background-color: #444;
+			/* background-color: #444; */
+      /* UPDATE - button color to indigo 500 */
+      background-color: #6366f1;
 			box-shadow: inset 0px 0px 0px 1px #242424, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.2);
 		}
 
