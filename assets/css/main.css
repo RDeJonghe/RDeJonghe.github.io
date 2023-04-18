@@ -1833,8 +1833,9 @@ input, select, textarea {
 					background-color: #C4376B;
 				}
 
+        /* edit color to indigo */
 				ul.social li a.fa-linkedin-in {
-					background-color: #006599;
+					background-color: #6363f1;
 				}
 
 				ul.social li a.fa-tumblr {
@@ -1845,8 +1846,14 @@ input, select, textarea {
 					background-color: #DA2713;
 				}
 
+        /* edit color to indigo 500 */
 				ul.social li a.fa-github {
-					background-color: #FAFAFA;
+					background-color: #6363f1;
+				}
+
+        /* add color for email icon */
+        ul.social li a.fa-envelope {
+					background-color: #6363f1;
 				}
 
 				ul.social li a.fa-rss {
