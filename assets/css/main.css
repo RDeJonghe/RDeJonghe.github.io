@@ -193,7 +193,9 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-top: solid 1px #444;
+    /* UPDATED to stone 800 */
+		/* border-top: solid 1px #444; */
+		border-top: solid 1px #292524;
 		border-top-color: rgba(0, 0, 0, 0.35);
 		box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
 		height: 1px;
@@ -1719,14 +1721,14 @@ input, select, textarea {
 			letter-spacing: -0.025em;
 		}
 
+    /* UPDATE - changed color to stone 800*/
 		input[type="button"].alt,
 		input[type="submit"].alt,
 		input[type="reset"].alt,
 		button.alt,
 		.button.alt {
-			background-color: #444;
-      /* UPDATE - button color to indigo 500 */
-      /* background-color: #6366f1; */
+			/* background-color: #444; */
+			background-color: #292524;
 			box-shadow: inset 0px 0px 0px 1px #242424, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.2);
 		}
 
@@ -1735,7 +1737,9 @@ input, select, textarea {
 			input[type="reset"].alt:hover,
 			button.alt:hover,
 			.button.alt:hover {
-				background-color: #4f4f4f;
+        /* UPDATE HOVER TO INDIGO 500 */
+				/* background-color: #4f4f4f; */
+				background-color: #6366F1;
 				color: #fff !important;
 			}
 
@@ -1806,7 +1810,9 @@ input, select, textarea {
 					-webkit-transition: background-color .2s ease-in-out;
 					-ms-transition: background-color .2s ease-in-out;
 					transition: background-color .2s ease-in-out;
-					background-color: #444;
+					/* background-color: #444; */
+          /* UPDATE TO stone 400 */
+					background-color: #a8a29e;
 					border-radius: 6px;
 					box-shadow: inset 0px 0px 0px 1px #282828, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
 					color: #2E2E2E !important;
@@ -1834,7 +1840,7 @@ input, select, textarea {
 				}
 
         /* UPDATE */
-        /* edit color to indigo */
+        /* edit color to indigo 500*/
 				ul.social li a.fa-linkedin-in {
 					background-color: #6363f1;
 				}
@@ -2020,8 +2026,10 @@ input, select, textarea {
 			text-shadow: 1px 1px 0px #fff;
 		}
 
+    /* UPDATE to use stone 800 */
 		.wrapper.style4 {
-			background-color: #303030;
+			/* background-color: #303030; */
+			background-color: #292524;
 			color: #999;
 			text-shadow: -1px -1px 0px #181818;
 		}
@@ -2048,7 +2056,9 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		background-color: #282828;
+    /* UPDATE to indigo 500 */
+		/* background-color: #282828; */
+		background-color: #6366f1;
 		text-align: center;
 		position: fixed;
 		left: 0;
@@ -2151,8 +2161,10 @@ input, select, textarea {
 
 /* Copyright */
 
+/* UPDATE color to stone 800 */
 	#copyright {
-		color: #666;
+		/* color: #666; */
+    color: #292524;
 		font-size: 1em;
 		line-height: 1em;
 		list-style: none;
