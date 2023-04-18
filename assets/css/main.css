@@ -1724,9 +1724,9 @@ input, select, textarea {
 		input[type="reset"].alt,
 		button.alt,
 		.button.alt {
-			/* background-color: #444; */
+			background-color: #444;
       /* UPDATE - button color to indigo 500 */
-      background-color: #6366f1;
+      /* background-color: #6366f1; */
 			box-shadow: inset 0px 0px 0px 1px #242424, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.2);
 		}
 
@@ -1833,8 +1833,10 @@ input, select, textarea {
 					background-color: #C4376B;
 				}
 
+        /* UPDATE */
+        /* edit color to indigo */
 				ul.social li a.fa-linkedin-in {
-					background-color: #006599;
+					background-color: #6363f1;
 				}
 
 				ul.social li a.fa-tumblr {
@@ -1845,8 +1847,16 @@ input, select, textarea {
 					background-color: #DA2713;
 				}
 
+        /* UPDATE */
+        /* edit color to indigo 500 */
 				ul.social li a.fa-github {
-					background-color: #FAFAFA;
+					background-color: #6363f1;
+				}
+
+        /* UPDATE */
+        /* add color for email icon */
+        ul.social li a.fa-envelope {
+					background-color: #6363f1;
 				}
 
 				ul.social li a.fa-rss {
