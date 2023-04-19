@@ -55,6 +55,20 @@ body {
 	-webkit-text-size-adjust: none;
 }
 
+/* UPDATE - adding id for text, stone 800 color, larger size */
+
+#description {
+  /* color: black; */
+  color: #292524;
+  font-size: 1.6em;
+}
+
+/* UPDATE - changing footer text to stone 400 to match button color */
+
+#footer {
+  color: #a8a29e;
+}
+
 mark {
 	background-color: transparent;
 	color: inherit;
