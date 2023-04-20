@@ -60,7 +60,8 @@ body {
 #description {
   /* color: black; */
   color: #292524;
-  font-size: 1.6em;
+  /* font size deactivated so it is mobile responsive */
+  /* font-size: 1.6em; */
 }
 
 /* UPDATE - changing footer text to stone 400 to match button color */
