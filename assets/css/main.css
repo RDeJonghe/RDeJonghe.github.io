@@ -1943,11 +1943,13 @@ input, select, textarea {
 
 /* Box */
 
+  /* UPDATE - added border radius */
 	.box {
 		background: #fff;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		text-align: center;
 		padding: 2em;
+    border-radius: 10px;
 	}
 
 		.box.style1 {
