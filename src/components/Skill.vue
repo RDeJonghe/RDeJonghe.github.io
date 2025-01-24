@@ -59,7 +59,7 @@ const handleMouseLeave = () => {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 0.055rem solid #bec3c6;
+  border: 0.085rem solid #bec3c6;
   border-radius: 0.5rem;
   width: 12rem;
   min-height: 6rem;

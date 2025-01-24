@@ -53,7 +53,7 @@ defineProps({
 #profile-container {
   display: flex;
   justify-content: flex-start;
-  border: 0.055rem solid #bec3c6;
+  border: 0.085rem solid #bec3c6;
   border-radius: 0.5rem;
   margin-top: 2rem;
   align-items: center;

@@ -65,7 +65,7 @@ const handleMouseLeave = () => {
   background-color: white;
   padding: 0.5rem;
   font-weight: bold;
-  border: 0.055rem solid #bec3c6;
+  border: 0.085rem solid #bec3c6;
   border-radius: 0.5rem;
 }
 
@@ -109,14 +109,14 @@ const handleMouseLeave = () => {
 }
 
 .logo-and-job-info {
-  border: 0.055rem solid #bec3c6;
+  border: 0.085rem solid #bec3c6;
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .description {
-  border-left: 0.055rem solid #bec3c6;
-  border-right: 0.055rem solid #bec3c6;
-  border-bottom: 0.055rem solid #bec3c6;
+  border-left: 0.085rem solid #bec3c6;
+  border-right: 0.085rem solid #bec3c6;
+  border-bottom: 0.085rem solid #bec3c6;
   border-radius: 0 0 0.5rem 0.5rem;
   padding: 1rem;
 }
