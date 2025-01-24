@@ -14,18 +14,21 @@ let isHovered = ref(false);
 
 const handleMouseEnter = () => {
   isHovered.value = true;
+  skillTextDisplayed = true;
 };
 
 const handleMouseLeave = () => {
   isHovered.value = false;
+  skillTextDisplayed = false;
 }
 </script>
 
+<!-- @click="skillTextDisplayed = !skillTextDisplayed" -->
 <template>
   <div
     class="skill-display"
     :style="{ backgroundColor: isHovered ? skillObj.hoverColor : '' }"
-    @click="skillTextDisplayed = !skillTextDisplayed"
+    
     @mouseenter="handleMouseEnter"
     @mouseleave="handleMouseLeave"
   >
@@ -36,12 +39,13 @@ const handleMouseLeave = () => {
       <div class="skill-title">
         {{ skillObj.title }}
       </div>
-      <div>{{ skillObj.description }}</div>
+      <!-- <div>{{ skillObj.description }}</div> -->
     </div>
   </div>
 </template>
 
 <style scoped>
+
 .skill-text {
   display: flex;
   justify-content: center;

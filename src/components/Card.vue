@@ -47,7 +47,7 @@ const handleMouseLeave = () => {
         <button class="link-button">{{ cardData.linkTitle }}</button>
       </a>
     </div>
-    <div>
+    <div class="ask-about-header">
       Ask About:
     </div>
     <div
@@ -61,16 +61,20 @@ const handleMouseLeave = () => {
 </template>
 
 <style scoped>
+.ask-about-header {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
 .link-button {
   background-color: white;
   padding: 0.5rem;
-  font-weight: bold;
   border: 0.085rem solid #bec3c6;
   border-radius: 0.5rem;
 }
 
 .link-button:hover {
-  background-color: #eceff1;
+  background-color: #CCECFF;
 }
 
 .logo-and-job-info.rounded-bottom {
@@ -78,15 +82,11 @@ const handleMouseLeave = () => {
 }
 
 .link {
-  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .dates {
   font-weight: bold;
-  margin-bottom: 0.5rem;
-  /* border: 0.125rem solid red; */
-  /* display: flex;
-  justify-content: flex-end; */
 }
 
 .bullet-text {
@@ -119,10 +119,6 @@ const handleMouseLeave = () => {
   border-bottom: 0.085rem solid #bec3c6;
   border-radius: 0 0 0.5rem 0.5rem;
   padding: 1rem;
-}
-
-.logo-and-job-info:hover {
-  /* background-color: #cfd8dc; */
 }
 
 @media (max-width: 768px) {
