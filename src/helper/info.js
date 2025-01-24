@@ -70,26 +70,26 @@ const info = {
     headerTitle: 'Select Skills',
     skillsArray: [
       {
-        title: 'Vue',
-        description: 'Frontend development',
+        title: 'Vue Framework',
+        description: '',
         imageSource: new URL('../assets/vue.svg', import.meta.url).href,
         hoverColor: 'rgba(0, 118, 189, 0.1)',
       },
       {
         title: 'TypeScript',
-        description: 'Programming Language',
+        description: '',
         imageSource: new URL('../assets/typescript.svg', import.meta.url).href,
         hoverColor: 'rgba(0, 118, 189, 0.1)',
       },
       {
         title: 'JavaScript',
-        description: 'Programming Language',
+        description: '',
         imageSource: new URL('../assets/javascript.svg', import.meta.url).href,
         hoverColor: 'rgba(0, 118, 189, 0.1)',
       },
       {
         title: 'SQL Server',
-        description: 'Querying and automations',
+        description: '',
         imageSource: new URL('../assets/sqlserver.svg', import.meta.url).href,
         hoverColor: 'rgba(0, 118, 189, 0.1)',
       },
@@ -101,19 +101,19 @@ const info = {
       },
       {
         title: 'Ruby',
-        description: 'Programming Language',
+        description: '',
         imageSource: new URL('../assets/ruby.svg', import.meta.url).href,
         hoverColor: 'rgba(0, 118, 189, 0.1)',
       },
       {
-        title: 'C#',
-        description: 'Programming Language',
+        title: 'C# Development',
+        description: '',
         imageSource: new URL('../assets/csharp.svg', import.meta.url).href,
         hoverColor: 'rgba(0, 118, 189, 0.1)',
       },
       {
-        title: '.Net',
-        description: 'Framework',
+        title: '.Net Framework',
+        description: '',
         imageSource: new URL('../assets/net.svg', import.meta.url).href,
         hoverColor: 'rgba(0, 118, 189, 0.1)',
       }
