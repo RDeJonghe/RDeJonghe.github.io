@@ -94,15 +94,15 @@ const info = {
         hoverColor: 'rgba(0, 118, 189, 0.1)',
       },
       {
-        title: 'Ruby',
-        description: 'Programming Language',
-        imageSource: new URL('../assets/ruby.svg', import.meta.url).href,
+        title: 'OpenAI API',
+        description: '',
+        imageSource: new URL('../assets/openai.svg', import.meta.url).href,
         hoverColor: 'rgba(0, 118, 189, 0.1)',
       },
       {
-        title: 'OpenAI',
-        description: 'Open AI API',
-        imageSource: new URL('../assets/openai.svg', import.meta.url).href,
+        title: 'Ruby',
+        description: 'Programming Language',
+        imageSource: new URL('../assets/ruby.svg', import.meta.url).href,
         hoverColor: 'rgba(0, 118, 189, 0.1)',
       },
       {
