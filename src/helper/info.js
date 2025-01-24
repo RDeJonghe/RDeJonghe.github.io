@@ -127,8 +127,9 @@ const info = {
         dates: 'Aug 2011 - Dec 2013',
         imageSource: new URL('../assets/sdsu-athletics.png', import.meta.url).href,
         descriptionArray: [
-          'Spanish (linguistics track)',
-          'Recognized as the outstanding student in the linguistics track for the class of 2013'
+          'The Spanish program with an emphasis in linguistics',
+          'My experience working for the Research Foundation and as a Teaching Associate',
+          'How I was recognized as the outstanding student in the linguistics track'
         ],
         hoverColor: 'rgba(0, 118, 189, 0.1)',
       }
