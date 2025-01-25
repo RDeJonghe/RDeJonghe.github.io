@@ -13,13 +13,9 @@
         var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
         v.onload = function() {
           window.voiceflow.chat.load({
-            verify: { projectID: '67914feb88b86136d6a81022' },
+            verify: { projectID: '673df46c5e15c60db284033d' },
             url: 'https://general-runtime.voiceflow.com',
-            versionID: 'production',
-          }).then(() => {
-            setTimeout(function () {
-              window.voiceflow.chat.open();
-            }, 1000)
+            versionID: 'production'
           });
         }
         v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
