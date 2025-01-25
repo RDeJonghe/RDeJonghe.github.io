@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/tab-logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Resume</title>
-    <script type="module" crossorigin src="/assets/index-BH10wPVX.js"></script>
+    <script type="module" crossorigin src="/assets/index-BMZshOEb.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-CVW1Mtc9.css">
   </head>
   <script type="text/javascript">
@@ -16,6 +16,10 @@
             verify: { projectID: '673df46c5e15c60db284033d' },
             url: 'https://general-runtime.voiceflow.com',
             versionID: 'production'
+          }).then(() => {
+            setTimeout(function () {
+              window.voiceflow.chat.open();
+            }, 2000)
           });
         }
         v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
