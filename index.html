@@ -6,6 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Resume</title>
   </head>
+
+
+<!-- script for the calendly extension -->
+<script>
+  const CalendlyExtension = {
+    name: 'Calendly',
+    type: 'response',
+    match: ({ trace }) =>
+      trace.type === 'Custom_Calendly' || trace.payload.name === 'Custom_Calendly',
+    render: ({ trace, element }) => {
+      const calendarContainer = document.createElement('div');
+
+      // Detect mobile or desktop
+      const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+      // Create iframe element
+      const iframe = document.createElement('iframe');
+      iframe.width = isMobile ? "150%" : "130%"; // Adjust width for mobile/desktop
+      iframe.height = isMobile ? "600" : "500"; // Adjust height for mobile/desktop
+      iframe.frameBorder = "0";
+      iframe.style.border = "0";
+      iframe.title = "Select Appointment";
+      // old calendar link
+      // iframe.src = "https://calendly.com/ryandej-proton/ai-booking-demo";
+      iframe.src="https://calendly.com/ryandej-proton/tech-talk"
+      iframe.allowFullscreen = true;
+
+      // Apply negative margin to move the calendar to the left
+      iframe.style.marginLeft = "-20px"; // Adjust value as needed
+      iframe.style.marginTop = "-10px"; // Adjust value as needed
+      iframe.style.marginBottom = "-10px"; // Adjust value as needed
+      iframe.style.marginRight = "-20px"; // Adjust value as needed
+      iframe.style.display = "block"; // Ensure proper alignment
+
+      // Append iframe to container
+      calendarContainer.appendChild(iframe);
+      element.appendChild(calendarContainer);
+    },
+  };
+</script>
+
+
+  <!-- script for the chat widget -->
   <script type="text/javascript">
     (function(d, t) {
         var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
