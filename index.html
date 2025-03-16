@@ -11,7 +11,7 @@
 <!-- script for the calendly extension -->
 <script>
   const CalendlyExtension = {
-    name: 'Calendly',
+    name: 'Custom_Calendly',
     type: 'response',
     match: ({ trace }) =>
       trace.type === 'Custom_Calendly' || trace.payload.name === 'Custom_Calendly',
@@ -48,8 +48,10 @@
 </script>
 
 
-  <!-- script for the chat widget -->
-  <script type="text/javascript">
+
+
+  <!-- ORIGINAL  -->
+  <!-- <script type="text/javascript">
     (function(d, t) {
         var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
         v.onload = function() {
@@ -65,7 +67,28 @@
         }
         v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
     })(document, 'script');
+  </script> -->
+
+  <script type="text/javascript">
+    (function(d, t) {
+        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        v.onload = function() {
+          window.voiceflow.chat.load({
+            verify: { projectID: '67d584b9d4a74d90be4b4e52' },
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production',
+            assistant: {
+		          extensions: [CalendlyExtension],
+	},
+            voice: {
+              url: "https://runtime-api.voiceflow.com"
+            }
+          });
+        }
+        v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+    })(document, 'script');
   </script>
+
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
