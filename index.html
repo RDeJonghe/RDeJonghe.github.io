@@ -14,8 +14,9 @@
     name: 'Custom_Calendly',
     type: 'response',
     match: ({ trace }) =>
-      trace.type === 'Custom_Calendly' || trace.payload.name === 'Custom_Calendly',
+      trace.type === 'Custom_Calendly',
     render: ({ trace, element }) => {
+      console.log(trace, '<<< trace')
       const calendarContainer = document.createElement('div');
 
       // Detect mobile or desktop
