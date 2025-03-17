@@ -22,7 +22,7 @@ const info = {
           'Leading a knowledge centered service initiative to improve documentation',
         ],
         hoverColor: '#CCECFF',
-        link: 'https://portal.dpsk12.org/web/course-catalog',
+        // link: 'https://portal.dpsk12.org/web/course-catalog',
         linkTitle: 'Course Catalog',
       },
       {
@@ -45,24 +45,10 @@ const info = {
           'The backend API and the creation of routes and data structures',
           'Working as a remote team and prioritizing productivity to meet deadlines'
         ],
-        link: 'https://seamless-cicd.com/',
+        // link: 'https://seamless-cicd.com/',
         linkTitle: 'Case Study',
         hoverColor: '#CCECFF',
       },
-      // {
-      //   title: 'Went Kerouac',
-      //   dates: 'Jul 1998 - Apr 2020',
-      //   imageSource: new URL('../assets/kerouac-logo4.png', import.meta.url).href,
-      //   descriptionArray: [
-      //     'My undergrad major in philosophy',
-      //     'Living in 5 different countries',
-      //     'Working as a mechanic on ships',
-      //     'Studying at the Autonomous University of Baja California',
-      //     'How I was a straight edge rasta with blonde dreadlocks',
-      //     'Full time camping and hiking in National Parks',
-      //   ],
-      //   hoverColor: '#CCECFF',
-      // },
     ]
   },
   skills: {
