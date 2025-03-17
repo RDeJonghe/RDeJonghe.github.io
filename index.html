@@ -5,26 +5,74 @@
     <link rel="icon" type="image/svg+xml" href="/tab-logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Resume</title>
-    <script type="module" crossorigin src="/assets/index-C9BgfJtQ.js"></script>
+    <script type="module" crossorigin src="/assets/index-Cn9xg7V6.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-CVW1Mtc9.css">
   </head>
-  <script type="text/javascript">
-    (function(d, t) {
-        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-        v.onload = function() {
-          window.voiceflow.chat.load({
-            verify: { projectID: '673df46c5e15c60db284033d' },
-            url: 'https://general-runtime.voiceflow.com',
-            versionID: 'production'
-          }).then(() => {
-            setTimeout(function () {
-              window.voiceflow.chat.open();
-            }, 2000)
-          });
-        }
-        v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-    })(document, 'script');
-  </script>
+
+
+<!-- script for the calendly extension -->
+<script>
+  const CalendlyExtension = {
+    name: 'Custom_Calendly',
+    type: 'response',
+    match: ({ trace }) =>
+      trace.type === 'Custom_Calendly',
+    render: ({ trace, element }) => {
+      const calendarContainer = document.createElement('div');
+
+      // Detect mobile or desktop
+      const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+      // Create iframe element
+      const iframe = document.createElement('iframe');
+      iframe.width = isMobile ? "150%" : "130%"; // Adjust width for mobile/desktop
+      iframe.height = isMobile ? "600" : "500"; // Adjust height for mobile/desktop
+      iframe.frameBorder = "0";
+      iframe.style.border = "0";
+      iframe.title = "Select Appointment";
+      // old calendar link
+      // iframe.src = "https://calendly.com/ryandej-proton/ai-booking-demo";
+      iframe.src="https://calendly.com/ryandej-proton/tech-talk"
+      iframe.allowFullscreen = true;
+
+      // Apply negative margin to move the calendar to the left
+      iframe.style.marginLeft = "-20px"; // Adjust value as needed
+      iframe.style.marginTop = "-10px"; // Adjust value as needed
+      iframe.style.marginBottom = "-10px"; // Adjust value as needed
+      iframe.style.marginRight = "-20px"; // Adjust value as needed
+      iframe.style.display = "block"; // Ensure proper alignment
+
+      // Append iframe to container
+      calendarContainer.appendChild(iframe);
+      element.appendChild(calendarContainer);
+    },
+  };
+</script>
+
+<script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '67d584b9d4a74d90be4b4e52' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production',
+          assistant: {
+            extensions: [CalendlyExtension],
+        },
+          voice: {
+            url: "https://runtime-api.voiceflow.com"
+          }
+        }).then(() => {
+          setTimeout(function () {
+            window.voiceflow.chat.open();
+          }, 3000)
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
+
   <body>
     <div id="app"></div>
   </body>
