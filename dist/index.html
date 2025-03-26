@@ -9,6 +9,13 @@
     <link rel="stylesheet" crossorigin href="/assets/index-CVW1Mtc9.css">
   </head>
 
+  <script>  document.addEventListener('DOMContentLoaded', function() {
+    const voiceflowLink = document.querySelector('.jsli366');
+    if (voiceflowLink) {
+      voiceflowLink.innerHTML = ''; // Or voiceflowLink.innerHTML = '';
+    }
+  });</script>
+
 
 <!-- script for the calendly extension -->
 <script>
@@ -59,6 +66,8 @@
           versionID: 'production',
           assistant: {
             extensions: [CalendlyExtension],
+            // add transparent style see below
+            stylesheet: 'data:text/css;base64,LmpzbGkzNjYgewogIGNvbG9yOiB0cmFuc3BhcmVudCAhaW1wb3J0YW50OwogIHRleHQtZGVjb3JhdGlvbi1jb2xvcjogdHJhbnNwYXJlbnQgIWltcG9ydGFudDsKfQ==',
         },
           voice: {
             url: "https://runtime-api.voiceflow.com"
@@ -73,7 +82,17 @@
   })(document, 'script');
 </script>
 
+
+
   <body>
     <div id="app"></div>
   </body>
 </html>
+
+<!-- 
+This is the style added to the data url
+.jsli366 {
+  color: transparent !important;
+  text-decoration-color: transparent !important;
+} 
+  -->
