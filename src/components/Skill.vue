@@ -21,6 +21,15 @@ const handleMouseLeave = () => {
   isHovered.value = false;
   skillTextDisplayed = false;
 }
+
+/* REMOVED DIV FOR DISPLAYING A DESCRIPTION
+    <div class="skill-text" v-show="skillTextDisplayed">
+      <div class="skill-title">
+        {{ skillObj.title }}
+      </div>
+      <!-- <div>{{ skillObj.description }}</div> -->
+    </div>
+*/
 </script>
 
 <!-- @click="skillTextDisplayed = !skillTextDisplayed" -->
@@ -32,14 +41,8 @@ const handleMouseLeave = () => {
     @mouseenter="handleMouseEnter"
     @mouseleave="handleMouseLeave"
   >
-    <div v-show="!skillTextDisplayed">
+    <div>
       <img class="skill-logo" :src="skillObj.imageSource" alt="Skill Obj" />
-    </div>
-    <div class="skill-text" v-show="skillTextDisplayed">
-      <div class="skill-title">
-        {{ skillObj.title }}
-      </div>
-      <!-- <div>{{ skillObj.description }}</div> -->
     </div>
   </div>
 </template>
