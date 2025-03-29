@@ -47,7 +47,7 @@ defineProps({
 #header-container {
   display: flex;
   justify-content: center;
-  /* margin-top: 2rem; */
+  margin-top: 2rem;
 }
 
 #profile-container {
