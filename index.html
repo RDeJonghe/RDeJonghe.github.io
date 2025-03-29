@@ -7,14 +7,6 @@
     <title>AI Resume</title>
   </head>
 
-  <script>  document.addEventListener('DOMContentLoaded', function() {
-    const voiceflowLink = document.querySelector('.jsli366');
-    if (voiceflowLink) {
-      voiceflowLink.innerHTML = ''; // Or voiceflowLink.innerHTML = '';
-    }
-  });</script>
-
-
 <!-- script for the calendly extension -->
 <script>
   const CalendlyExtension = {
@@ -71,9 +63,16 @@
             url: "https://runtime-api.voiceflow.com"
           }
         }).then(() => {
-          setTimeout(function () {
-            window.voiceflow.chat.open();
-          }, 3000)
+          // setTimeout(function () {
+          //   window.voiceflow.chat.open();
+          // }, 3000)
+
+          window.voiceflow.chat.proactive.clear(); // clear all previous messages
+          window.voiceflow.chat.proactive.push({ 
+              type: 'text', 
+              payload: { message: '💡 Speak with my AI Agent' }
+            },
+          );
         });
       }
       v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
@@ -87,11 +86,3 @@
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
-
-<!-- 
-This is the style added to the data url
-.jsli366 {
-  color: transparent !important;
-  text-decoration-color: transparent !important;
-} 
-  -->
